@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+header{
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    background-image: url(https://images.hdqwalls.com/wallpapers/batman-2020-artwork-new-4k-e0.jpg);
+    background-position: center;
+}
+.nav{
+    margin-top: -350px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all 0.5s ease;
+    z-index: 10000;
+}
+.nav.active{
+    background-color: #FF003D;
+}
+.nav.active .logo,
+.nav.active a{
+    color: white;
+}
+.nav.active a:hover{
+    color: #FF003D;
+}
+.nav.active .box{
+    color: red;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+    margin-left: 35px;
+}
+.menu{
+    display: flex;
+    margin-right: 35px;
+
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+}
+
+
+.box{
+    position: relative;
+    top: 15px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[type="text"]{
+    background-color: white;
+    width: 140px;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+    color: #FF003D;
+}
+input[type="submit"]{
+    position: relative;
+    left: -5px;
+    border-radius: 0px 25px 25px 0px;
+    width: 80px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FF003D;
+}
+input[type="submit"]:hover{
+    background: black;
+    color: white;
+    transition: 1.1s;
+}
+
+
+.profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.barraNegra{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+
+
+
+#Contendorimg{
+    opacity: 70%;
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+#letras{
+    margin: 0 auto;
+    height: 250px;
+    width: 500px;
+    margin-bottom: 70px;
+    color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#letras P{
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+.arreglo h2{
+    text-align: center;
+}
+
+.contenedor2{
+display: flex;
+margin-top: 20px;
+align-items: center;
+}
+
+
+.izquierda{
+    width: 20%;
+    height: 100%;
+    
+}
+.derecha {
+
+    margin-left: 50px;
+}
+.derechag{
+    margin-top: 20px;
+    width: 80%;
+    height: 100%; 
+}
+.vistag{
+    align-items: center;
+    font-family: "lato";
+    font-size: 60px;
+    color:  #6C001A;
+    width: 100%;
+    margin-left: 25%;
+
+
+
+}
+.nav__link{
+    color: #ffffff;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.list{
+    width: 100%;
+    height: 1285px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ff003cda;
+}
+.list * :hover{
+        color: #FF003D;
+        background-color: #ffffff;}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.list__item1{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    color: #FF003D;
+}
+
+.list *{
+    font-size: x-large;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.barrasnegras{
+    background-color: #000;
+    width: 100%;
+    height: 5px;
+}
+
+.footimg{
+    width: 40px;
+    height: 40px;
+  margin: 15px;
+    
+
+}
+
+.footerarreglo{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.footerarreglo p{
+    margin-left: 15px;
+}
+
+.text1{
+    margin-left: 380px;
+    font-family: "lato";
+    font-size: 70px;
+    position: absolute;
+    margin-top: 90px;
+    color: #6C001A;
+    
+}
+
+.text2{
+    margin-left: 358px;
+    font-family: "lato";
+    font-size: 55px;
+    position: absolute;
+    margin-top: 150px;
+    color: #6C001A;
+}
+.infousuario{
+    display: flex;
+    position: relative;
+}
+.pagos{
+    display: flex;
+    position: relative;
+}
+
+.perfil{
+    color: #6C001A;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-size: 40px;
+    margin-top: 16px;
+}
+.b{
+    color: #b3b3b3;
+    font-size: 20px;
+    margin: 15px;
+   
+}
+.b *{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    
+ 
+}
+.c *{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    font-family: "lato";
+}
+.c{
+    color: #000000;
+    margin-left: 30px;
+    font-size: large;
+    font-size: 20px;
+    margin: 15px;
+}
+button{
+text-decoration: none;
+padding: 10px;
+ font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: #FF003D;
+  box-shadow: #000000 4px;
+  border-radius: 6px;
+  border: none;
+  margin-left: 30px;
+  height: 50px;
+  width: 170px;
+  margin: 30px;
+  
+  
+  
+}
+
+button:hover{
+    color: white;
+    background-color:  #000000;
+    transition: 1.1s;
+    scale: 1.1;
+    cursor: pointer
+}
+    
+.button1{
+        text-decoration: none;
+        padding: 10px;
+         font-weight: 600;
+          font-size: 14px;
+          color: white;
+          background-color: #FF003D;
+          box-shadow: #000000 4px;
+          border-radius: 6px;
+          border: none;
+          margin-left: 30px;
+          height: 50px;
+          width: 170px;
+          margin: 30px;
+          margin-top: 50px;
+        }
+        
+.button1 :hover{
+            color: white;
+            background-color:  black;
+            transition: 1.1s;
+            scale: 1.1;
+        }
+            
+.e{
+    color: #6C001A;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-size: 40px;
+    margin-top: 30px;
+}
+h5{
+    margin-left: 15px;
+    font-size: 24px;  
+
+}
+
+.f{
+   color: #6C001A;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    font-size: 40px;
+    margin-top: 30px;
+}   
+.g{
+  
+    margin-bottom: 30px;
+    margin-left: 100px;
+   
+    margin-top: 30px;
+}
+
+
+p{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
