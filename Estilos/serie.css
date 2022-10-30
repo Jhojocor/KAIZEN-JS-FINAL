@@ -10,8 +10,19 @@ header{
     background-size: cover;
     width: 100%;
     height: 750px;
-    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mv5bmzmyyji4ntmtmgiyms00nmywltlmmjitzjrmzwrlmgvjmzjixkeyxkfqcgdeqxvymteymjm2ndc2-v1-1657880384.jpg);
+    /*background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mv5bmzmyyji4ntmtmgiyms00nmywltlmmjitzjrmzwrlmgvjmzjixkeyxkfqcgdeqxvymteymjm2ndc2-v1-1657880384.jpg);*/*
     background-position: center;
+}
+.variableImagen{
+    width: 100%;
+    height: 650px;
+    z-index: -10000;
+    position: absolute;
+    top: 0;
+}
+.variableImagen *{
+    width: 100%;
+    height: 750px;
 }
 .nav{
     margin-top: -750px;
@@ -198,7 +209,7 @@ input[type="submit"]:hover{
 
 .ContenidoPelis{
     width: 90%;
-    height: 550px;
+    height: 2570px;
     margin: 40px auto;
     /*background-color: #cc7488;*/
 }
