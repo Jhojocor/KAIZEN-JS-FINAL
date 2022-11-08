@@ -53,3 +53,23 @@ function showData(){
 }
 
 showData();
+const footer = document.getElementById("footer");
+
+let Contact = ["Sede central: icesi",   "telefono: +57 30078125", "Correo: Kaisen@gmail.com"]
+
+
+//arreglo.push("Sede central: icesi");
+//arreglo.push("telefono: +57 30078125");
+//arreglo.push("Correo: Kaisen@gmail.com");
+
+console.log(Contact);
+
+
+
+function showDataContact(){
+    for(let i=0 ; i<Contact.length ; i++ ){
+        footer.innerHTML += `&nbsp${Contact[i]}&nbsp`
+    }
+}
+
+showDataContact();

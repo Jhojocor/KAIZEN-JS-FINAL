@@ -287,34 +287,38 @@ footer{
 
 .perfil{
     color: #6C001A;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-left: 15px;
     font-size: 40px;
     margin-top: 16px;
 }
-.b{
+#infousuario{
     color: #b3b3b3;
-    font-size: 20px;
+    font-size: 50px;
     margin: 15px;
-   
+   list-style: none;
 }
-.b *{
+#infousuario *{
     margin-bottom: 30px;
     margin-left: 10px;
+    text-decoration: none;
+    list-style: none;
     
  
 }
-.c *{
+#infousuario *{
     margin-bottom: 30px;
     margin-left: 10px;
     font-family: "lato";
+    list-style: none;
 }
-.c{
+#infousuario{
     color: #000000;
     margin-left: 30px;
     font-size: large;
     font-size: 20px;
     margin: 15px;
+    list-style: none;
 }
 button{
 text-decoration: none;
