@@ -208,9 +208,9 @@ input[type="submit"]:hover{
 
 
 .ContenidoPelis{
-    padding: 10px;
+    padding: 10%;
     width: 93%;
-    height: 1500px;
+    height: auto;
     margin: 4px auto;
     display: flex;
     flex-direction: row;
@@ -218,10 +218,10 @@ input[type="submit"]:hover{
     /*background-color: #FF003D;*/
 }
 .ContenidoPelis2{
-    padding: 10px;
-    width: 93%;
-    height: 1500px;
-    margin: 4px auto;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -308,4 +308,10 @@ footer *{
 a{
     text-decoration: none;
 }
-
+.signOut{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 18px;
+    
+}

@@ -21,8 +21,8 @@
 
             <div class="box">
                 <form>
-                    <input type="text" name="" placeholder="Spiderman">
-                    <input type="submit" name="" value="Buscar">
+                    <input type="text" name="" placeholder="Spiderman" id="searchInput">
+                    <button type="submit" name="" id="searchBtn">Buscar</button>
                 </form>
             </div>
 
@@ -30,6 +30,7 @@
                 <li><a href="mainp.html">Pelis</a></li>
                 <li><a href="mainp.html">Series</a></li>
                 <li><a href="mainp.html">Streams</a></li>
+                <button id="cerrarSesion" class="signOut" onclick="cerrarSesion()">cerrar sesion</button>
                 <li><a href="usuario.html">Dominiciano</li><img class="profile" src="Img/poster2.jpg" alt=""></a>
             </ul>
         </nav>
@@ -40,7 +41,7 @@
      <div class="scrol"></div>
      <div class="barraNegra"></div>
 
-    <div class="arreglado"><h4>Favoritos</h4></div>
+    <div class="arreglado" id="fav"><h4>Favoritos</h4></div>
      <div id="ContenidoPelis" class="ContenidoPelis">
         
 
@@ -74,4 +75,5 @@
 <script src="Model/mainpModel.js"></script>
 <script src="JS/serie.js"></script>
 <script src="JS/mainp.js"></script>
+<script src="JS/cerrarSesion.js"></script>
 </html>

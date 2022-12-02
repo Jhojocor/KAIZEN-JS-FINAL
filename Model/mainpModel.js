@@ -1,18 +1,19 @@
 class pelis{
-    constructor(imagen, titulo, rating, ratingimg, sinopsis){
-        this.imagen = imagen;
-        this.titulo = titulo;
-        this.rating = rating;
-        this.ratingimg = ratingimg;
+    constructor(id, image, name, status, species, sinopsis, estado){
+        this.id = id;
+        this.image = image;
+        this.name = name;
+        this.status = status;
+        this.species = species;
         this.sinopsis = sinopsis;
+        this.estado = estado;
     }
     rendermap(){
-        contBanner.innerHTML += `<div class="variableImagen"><img src="${this.imagen}"></div>
+        contBanner.innerHTML = `<div class="variableImagen"><img src="${this.image}"></div>
     <div id="Contendorimg">
     <div id="letras">
         <div class="arreglo">
-            <h2>${this.titulo}</h2>
-            <h5>${this.rating}</h5>
+            <h2>${this.name}</h2>
         </div>
         <div class="final">
             <input id="crear" type="submit" value="PLAY">
@@ -21,54 +22,49 @@ class pelis{
     </div>
     </div>`
     }
-    rendermodulo(){
-        ContenidoPelis.innerHTML += `<div class="primera" >
+    rendermodulo(container){
+        let div = document.createElement('div'); 
+        let content = `<div class="primera" >
         <a href="serie.html">
-        <img class="imgpri" src="${this.imagen}" alt="" width="250px">
+        <img class="imgpri" src="${this.image}" alt="" width="250px">
         </a>    
         <div class="contontext">
-        <h4>${this.titulo}</h4> 
-        <p>${this.sinopsis}</p>
+        <h4>${this.name}</h4> 
+        <p>${this.status}</p>
+        <button id="botonFav${this.id}">Agregar a favoritos</button>
         </div>
     </div>`
+    div.innerHTML = content;
+    container.appendChild(div);
     }
-    rendermodulo2(){
-        ContenidoPelis2.innerHTML += `<div class="primera" >
+    rendermodulo2(container){
+        let div = document.createElement('div'); 
+        let content = `<div class="primera" >
         <a href="serie.html">
-        <img class="imgpri" src="${this.imagen}" alt="" width="250px">
+        <img class="imgpri" src="${this.image}" alt="" width="250px">
         </a>    
         <div class="contontext">
-        <h4>${this.titulo}</h4> 
-        <p>${this.sinopsis}</p>
+        <h4>${this.name}</h4> 
+        <p>${this.status}</p>
+        <button id="Back${post.id}" onclick="favoritos()">Eliminar favoritos</button>
         </div>
     </div>`
+    div.innerHTML = content;
+    container.appendChild(div);
     }
-    rendermapserie(){
-        bannerserie.innerHTML += `<div class="variableImagen"><img src="${this.imagen}"></div>
-        <div id="Contendorimg">
-            <div id="letras">
-                <div class="arreglo">
-                    <h2>${this.titulo}</h2>
-                    <h5>${this.rating}</h5>
-                </div>
-                <p>${this.sinopsis}</p>
-                <div class="final">
-                    <input id="crear" type="submit" value="PLAY">
-                    <input id="crear" type="submit" value="SAVE">
-                </div>
-            </div>
-        </div>`
-    }
-    rendercaps(){
-        ContenidoPelis.innerHTML += `<div class="serieC">
-        <img class="serieimg" src="${this.imagen}" alt="">
-        <div class="SerieCS">
-        <a href="#"><img class="play" src="Img/plays.png" alt=""></a>
-        <h4 class="Eltitulo">${this.titulo}</h4>
-        </div>
-        <div class="arreglo2">
-        <p class="sinopsis">${this.sinopsis}</p>
+    rendermodulo3(container){
+        let div = document.createElement('div'); 
+        let content = `<div class="primera" >
+        <a href="serie.html">
+        <img class="imgpri" src="${this.image}" alt="" width="250px">
+        </a>    
+        <div class="contontext">
+        <h4>${this.name}</h4> 
+        <p>${this.status}</p>
+        <button id="botonFav" onclick="removefavorite()">Quitar de favoritos</button>
         </div>
     </div>`
+    div.innerHTML = content;
+    container.appendChild(div);
     }
 }

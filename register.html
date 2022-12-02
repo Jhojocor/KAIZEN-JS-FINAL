@@ -22,23 +22,25 @@
             <div id="Formulario">
                 <H1><span style="color:#FF003D">Sign</span><span style="color: #FF003D"> Up</span></H1>
                 <div><span class="segundal">ya tienes tu cuenta?</span><span class="segundal" style="color:#FF003D"><a href="login.html"> Inicia Sesión</a></span></div>
-                <form><br>
-                    <label class="Texof" for="Form">Name</label>
-                    <input class="Form" type="text" placeholder="Your name">
-                    <label class="Texof" for="Form">Email Address</label>
-                    <input class="Form" type="text" placeholder="Example@gmail.com">
-                    <label class="Texof" for="Form">Password</label>
-                    <input class="Form" type="text" placeholder="Enter password">
+                <form onsubmit="signUp()"><br>
+                    <label class="Texof" for="Name">Name</label>
+                    <input class="Form" type="text" placeholder="Your name" id="name">
+                    <label class="Texof" for="Email">Email Address</label>
+                    <input class="Form" type="email" placeholder="Example@gmail.com" id="email">
+                    <label class="Texof" for="Password">Password</label>
+                    <input class="Form" type="text" placeholder="Enter password" id="password">
                     <input class="xd" type="checkbox"><label class="xd" for="recuerdame">Estoy de acuerdo con <span style="color:#FF003D">términos</span> y <span style="color:#FF003D">condiciones</span></label>
                     <!--<input id="crear" type="submit" value="Crear cuenta">-->
 
-                    <a href="mainp.html">
-                        <input id="crear" type="button" value="Crear cuenta" />
-                     </a>
+                    
+                        <button id="crear" type="submit" id="loginBTN">Crear cuenta</button>
+                     
                 </form>
             </div>
         </div>
     </div>
     
 </body>
+<script src="./Model/userModel.js"></script>
+<script src="./JS/register.js"></script>
 </html>
